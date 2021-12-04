@@ -1,0 +1,327 @@
+/* .scrolling-active {
+    background-color: rgb(105, 105, 105);
+
+} */
+* {
+    /* font-family: manrope-regular !important; */
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body,
+html,
+section {
+    max-width: 100% !important;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+nav.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
+    color: black !important;
+}
+header.sticky .navbar {
+    background: black ;
+    padding: 0.4em 0.2em ;
+    box-shadow: 0 3px 1rem rgb(114, 110, 110);
+}
+header.sticky .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
+    color: rgb(204, 204, 204) !important;
+}
+header.sticky .navbar .navbar-brand .navbar-item .fs-2{
+    color: rgb(255, 255, 255);
+}
+header.sticky .navbar .navbar-brand .navbar-item .fs-6{
+    color: rgb(52, 55, 224) !important;
+}
+.jumbroton {
+    background-image: url('../images/background.png');
+    background-size: auto;
+    min-height: 100%;
+    text-align: center;
+    /* margin-top: -3vh; */
+}
+.jumbroton .welcomeText{
+    padding-top: 15vh;
+}
+.padding-0{
+    margin-top: -3.3vh;
+    padding-right:0;
+    padding-left:0;
+}
+.text{
+    margin-top: -8vh;
+}
+.jumbroton .container-fluid {
+    padding-top: 35vh;
+}
+.homebutton {
+    margin-top: 20vh;
+}
+.loginbutton {
+    margin-top: 20vh;
+}
+.bttnLogin, .bttnRegister{
+    margin-top: 50vh;
+}
+.buttonlogregis{
+    margin-top: -85px;
+}
+.jumbroton .btn {
+    border: none;
+    border-radius: 25px;
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+.jumbroton .btn:hover{
+    background-color: rgb(47, 145, 23);
+    color: white;
+}
+/* .sc-login {
+    max-height: 100vh !important;
+} */
+.loginImage img {
+    margin-top: 10em !important;
+    max-width: 25em;
+}
+.formLogin {
+    margin-top: 17em !important;
+}
+.registerImage img {
+    margin-top: 10em !important;
+    max-width: 25em;
+}
+.formRegister {
+    margin-top: 10em !important;
+}
+.sideBar {
+    background-color: rgb(76, 138, 61);
+    /* position: absolute; */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: left; */
+
+}
+.sideBar .text-white a {
+    color: white;
+    text-decoration: none;
+}
+.sideBar .text-white a:hover {
+    color: rgb(210, 245, 10);
+    text-decoration: none;
+}
+.sideBar .text-white a.active {
+    /* border-color: yellow !important; */
+    color: rgb(230, 255, 91);
+    text-decoration: none;
+}
+.sideBar .logout {
+    margin-top: 40vh !important;
+}
+.mainBar {
+    margin-left: 17vw !important;
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: left; */
+}
+
+.userHome{
+    max-height:100vh !important;
+}
+
+.bg-primary {
+    color: #fff
+}
+
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+.buttonkumpul {
+    margin-top: 10%;
+}
+.secText{
+    display: none;
+}
+.home .carousel-item{
+	min-height: 100vh;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+.carousel-inner .item:after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.imagebackground1{
+    background-image:url('../images/feed1blur.jpg');
+    /* -webkit-filter: blur(8px); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagebackground2{
+    background-image:url('../images/feed2blur.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .carousel-item:before{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: -1;
+}
+.home .carousel-item .container{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.home .carousel-item h2{
+	font-size: 80px;
+	color: #ffffff;
+	margin:0 0 10px;
+	opacity: 0;
+}
+.home .carousel-item p{
+	font-size: 30px;
+	margin:0;
+	color: #eeeeee;
+	opacity:0;
+}
+.home .carousel-item.active h2{
+	animation: fadeInLeft 0.5s ease forwards;
+}
+.home .carousel-item.active p{
+	animation: fadeInRight 0.5s ease forwards;
+}
+
+@keyframes fadeInLeft{
+	0%{
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes fadeInRight{
+	0%{
+		opacity: 0;
+		transform: translateX(30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.home .carousel-controls{
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	z-index: 10;
+	transform: translateX(-50%);
+}
+
+.home .carousel-indicators{
+	position: relative;
+	margin:0;
+}
+
+.home .carousel-indicators li{
+	height: 2px;
+	width: 2px;
+	margin:0 5px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	border:3px solid transparent;
+	transition: all 0.3s ease;
+}
+.home .carousel-indicators li.active{
+	border-color: #ffffff;
+	transform: scale(1.2);
+}
+
+.home .carousel-control-next,
+.home .carousel-control-prev{
+	height: 2px;
+	width: 2px;
+	opacity: 1;
+	z-index: 3;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	transition: all 0.3s ease;
+}
+.home .carousel-control-next:hover,
+.home .carousel-control-prev:hover{
+   box-shadow: 0 0 10px #ffffff;
+}
+.home .carousel-control-next img,
+.home .carousel-control-prev img{
+   width: 30px;
+}
+.home .carousel-control-next{
+	right: -90px;
+}
+.home .carousel-control-prev{
+	left: -90px;
+}
+.mainimage img{
+    max-width: 70vh;
+  }
+
+/*responsive*/
+@media(max-width: 767px){
+  .home .carousel-control-next,
+  .home .carousel-control-prev, .text{
+  	display: none;
+  }
+  .secText{
+    display: block;
+  }
+  .jumbroton{
+      background-image: none;
+      background-color: teal;
+  }
+  .home .carousel-indicators li{
+  	height: 2px;
+  	width: 2px;
+  }
+  .home .carousel-item h2{
+  	font-size: 45px;
+  }
+  .home .carousel-item p{
+  	font-size: 22px;
+  }
+  .mainimage img{
+    max-width: 80%;
+  }
+}
+
+
+
